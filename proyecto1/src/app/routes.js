@@ -13,7 +13,7 @@ module.exports = (app, passport) => {
 	});
 
 	app.post('/login', passport.authenticate('local-login', {
-		successRedirect: '/profile',
+		successRedirect: '/map',
 		failureRedirect: '/login',
 		failureFlash: true
 	}));
@@ -26,14 +26,14 @@ module.exports = (app, passport) => {
 	});
 
 	app.post('/signup', passport.authenticate('local-signup', {
-		successRedirect: '/profile',
+		successRedirect: '/map',
 		failureRedirect: '/signup',
 		failureFlash: true // allow flash messages
 	}));
 
-	//profile view
-	app.get('/profile', isLoggedIn, (req, res) => {
-		res.render('profile', {
+	//map view
+	app.get('/map', isLoggedIn, (req, res) => {
+		res.render('map', {
 			user: req.user
 		});
 	});
