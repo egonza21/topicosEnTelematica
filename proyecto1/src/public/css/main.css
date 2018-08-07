@@ -17,11 +17,10 @@
 }
 
 .btnMap{
-	background-color: #59a58d;
+	background-color: white;
 	color: black;
 	border: 2px solid white;
 	padding: 20px 40px;
-	font-weight: bold;
     text-align: center;
     text-decoration: none;
     display: inline-block;
