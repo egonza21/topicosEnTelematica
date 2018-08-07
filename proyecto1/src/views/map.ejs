@@ -7,7 +7,7 @@
 </head>
 <body class = "map">
     <div class = "container">
-        <button style="vertical-align:middle" onclick="getLocation()"><span>Obtener Ubicación</span></button>
+        <button class = "btnMap" style="vertical-align:middle" onclick="getLocation()"><span>Obtener Ubicación</span></button>
     </div>
 
     <div id="mapholder"></div>
@@ -32,8 +32,8 @@ function showPosition(position) {
     var lon = position.coords.longitude;
     var latlon = new google.maps.LatLng(lat, lon)
     var mapholder = document.getElementById('mapholder')
-    mapholder.style.height = '250px';
-    mapholder.style.width = '500px';
+    mapholder.style.height = '500px';
+    //mapholder.style.width = '500px';
 
     var myOptions = {
         center:latlon,zoom:14,
