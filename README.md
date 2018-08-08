@@ -13,6 +13,7 @@ mongoDB:
 *	sudo yum install mongodb-org
 *	sudo systemctl start mongod
 Fuente: https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-centos-7
+
 NodeJS:
 *	sudo yum install epel-release
 *	sudo yum install nodejs
@@ -20,6 +21,7 @@ NodeJS:
 y listo con eso nos daremos cuenta le versión del node.
 
 Fuente: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-a-centos-7-server
+
 Además de estas herramientas, también necesitaremos instalar Docker para todo el manejo de la dockerización en los ambientes del DCA y 
 AWS y se hace así:
 
