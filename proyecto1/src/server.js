@@ -29,7 +29,7 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: false}));
 // required for passport
 app.use(session({
-	secret: 'faztwebtutorialexample',
+	secret: 'egonza21',
 	resave: false,
 	saveUninitialized: false
 }));
