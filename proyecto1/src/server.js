@@ -9,7 +9,7 @@ const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
-const compression = require('compression');
+//const compression = require('compression');
 
 const { url } = require('./config/database.js');
 
